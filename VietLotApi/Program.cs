@@ -14,14 +14,26 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-// Auto migrate Database on startup (For Docker)
+// Auto migrate Database on startup (For Docker) with retry logic
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    try {
-        dbContext.Database.Migrate();
-    } catch(Exception ex) {
-        Console.WriteLine("Migration Error: " + ex.Message);
+    var retries = 10;
+    while (retries > 0)
+    {
+        try 
+        {
+            Console.WriteLine("Attempting Database Migration...");
+            dbContext.Database.Migrate();
+            Console.WriteLine("Database Migration Successful!");
+            break;
+        } 
+        catch(Exception ex) 
+        {
+            Console.WriteLine("Migration Error: " + ex.Message + ". Retrying in 5 seconds...");
+            System.Threading.Thread.Sleep(5000);
+            retries--;
+        }
     }
 }
 
