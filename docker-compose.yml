@@ -9,7 +9,7 @@ services:
       - "5114:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
-      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=DemoDB;User Id=sa;Password=VietLot@Pass123!;TrustServerCertificate=True;MultipleActiveResultSets=true
+      - ConnectionStrings__DefaultConnection=Server=DESKTOP-S48P9OU;Database=DemoDB;User Id=;Password=;TrustServerCertificate=True;MultipleActiveResultSets=true
     depends_on:
       - sqlserver
 
