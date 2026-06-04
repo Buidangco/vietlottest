@@ -1,0 +1,140 @@
+<main class="content-area" id="content-area">
+            <div class="card" style="margin-bottom:16px">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="fas fa-shield-alt"></i> Quản trị Nhóm Quyền</h3>
+                    <button class="btn btn-primary" onclick="window.app.themNhomQuyen()"><i class="fas fa-plus"></i> Thêm Nhóm mới</button>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
+            <div class="card" style="margin-bottom:0;border-top:3px solid #7c3aed">
+                <div class="card-header" style="padding:12px 16px">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:38px;height:38px;border-radius:50%;background:#7c3aed20;display:flex;align-items:center;justify-content:center;color:#7c3aed"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <b style="font-size:13px;color:#7c3aed">Admin (Giám đốc)</b>
+                            <p style="margin:0;font-size:11px;color:var(--text-muted)">Toàn quyền hệ thống</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px" onclick="window.app.editNhomQuyen('G001')"><i class="fas fa-edit"></i> Sửa</button>
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px;color:#dc2626;border-color:#fecaca" onclick="window.app.xoaNhomQuyen('G001')"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="card-body" style="padding:12px 16px">
+                    <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:700">PHÂN HỆ ĐƯỢC PHÉP (11/11):</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:5px">
+                        <span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Trang tổng quan</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Quản lý Phát hành</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Thu hồi vé</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Tra thưởng</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Kế toán Chi trả</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Thẩm định HS</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Quản lý Đại lý</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Báo cáo</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Quản trị hệ thống</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Nhật ký Audit</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#7c3aed15;color:#7c3aed">Cổng Khách hàng</span>
+                    </div>
+                    <p style="margin:10px 0 0;font-size:12px;color:var(--text-muted)"><i class="fas fa-users"></i> 1 thành viên thuộc nhóm này</p>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom:0;border-top:3px solid #1d4ed8">
+                <div class="card-header" style="padding:12px 16px">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:38px;height:38px;border-radius:50%;background:#1d4ed820;display:flex;align-items:center;justify-content:center;color:#1d4ed8"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <b style="font-size:13px;color:#1d4ed8">Nhân viên Kế toán</b>
+                            <p style="margin:0;font-size:11px;color:var(--text-muted)">Chi trả, hạch toán</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px" onclick="window.app.editNhomQuyen('G002')"><i class="fas fa-edit"></i> Sửa</button>
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px;color:#dc2626;border-color:#fecaca" onclick="window.app.xoaNhomQuyen('G002')"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="card-body" style="padding:12px 16px">
+                    <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:700">PHÂN HỆ ĐƯỢC PHÉP (4/11):</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:5px">
+                        <span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#1d4ed815;color:#1d4ed8">Trang tổng quan</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản lý Phát hành</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thu hồi vé</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Tra thưởng</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#1d4ed815;color:#1d4ed8">Kế toán Chi trả</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thẩm định HS</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản lý Đại lý</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#1d4ed815;color:#1d4ed8">Báo cáo</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản trị hệ thống</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#1d4ed815;color:#1d4ed8">Nhật ký Audit</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Cổng Khách hàng</span>
+                    </div>
+                    <p style="margin:10px 0 0;font-size:12px;color:var(--text-muted)"><i class="fas fa-users"></i> 2 thành viên thuộc nhóm này</p>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom:0;border-top:3px solid #0369a1">
+                <div class="card-header" style="padding:12px 16px">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:38px;height:38px;border-radius:50%;background:#0369a120;display:flex;align-items:center;justify-content:center;color:#0369a1"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <b style="font-size:13px;color:#0369a1">Nhân viên Thẩm định</b>
+                            <p style="margin:0;font-size:11px;color:var(--text-muted)">Kiểm tra, duyệt hồ sơ thưởng</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px" onclick="window.app.editNhomQuyen('G003')"><i class="fas fa-edit"></i> Sửa</button>
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px;color:#dc2626;border-color:#fecaca" onclick="window.app.xoaNhomQuyen('G003')"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="card-body" style="padding:12px 16px">
+                    <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:700">PHÂN HỆ ĐƯỢC PHÉP (4/11):</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:5px">
+                        <span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#0369a115;color:#0369a1">Trang tổng quan</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản lý Phát hành</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thu hồi vé</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Tra thưởng</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Kế toán Chi trả</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#0369a115;color:#0369a1">Thẩm định HS</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#0369a115;color:#0369a1">Quản lý Đại lý</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Báo cáo</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản trị hệ thống</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#0369a115;color:#0369a1">Nhật ký Audit</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Cổng Khách hàng</span>
+                    </div>
+                    <p style="margin:10px 0 0;font-size:12px;color:var(--text-muted)"><i class="fas fa-users"></i> 1 thành viên thuộc nhóm này</p>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom:0;border-top:3px solid #047857">
+                <div class="card-header" style="padding:12px 16px">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:38px;height:38px;border-radius:50%;background:#04785720;display:flex;align-items:center;justify-content:center;color:#047857"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <b style="font-size:13px;color:#047857">Chuyên viên Phát hành</b>
+                            <p style="margin:0;font-size:11px;color:var(--text-muted)">Lập kế hoạch, quản lý kỳ</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px" onclick="window.app.editNhomQuyen('G004')"><i class="fas fa-edit"></i> Sửa</button>
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px;color:#dc2626;border-color:#fecaca" onclick="window.app.xoaNhomQuyen('G004')"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="card-body" style="padding:12px 16px">
+                    <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:700">PHÂN HỆ ĐƯỢC PHÉP (5/11):</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:5px">
+                        <span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#04785715;color:#047857">Trang tổng quan</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#04785715;color:#047857">Quản lý Phát hành</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#04785715;color:#047857">Thu hồi vé</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Tra thưởng</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Kế toán Chi trả</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thẩm định HS</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#04785715;color:#047857">Quản lý Đại lý</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#04785715;color:#047857">Báo cáo</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản trị hệ thống</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Nhật ký Audit</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Cổng Khách hàng</span>
+                    </div>
+                    <p style="margin:10px 0 0;font-size:12px;color:var(--text-muted)"><i class="fas fa-users"></i> 1 thành viên thuộc nhóm này</p>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom:0;border-top:3px solid #b45309">
+                <div class="card-header" style="padding:12px 16px">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:38px;height:38px;border-radius:50%;background:#b4530920;display:flex;align-items:center;justify-content:center;color:#b45309"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <b style="font-size:13px;color:#b45309">Thủ kho vé</b>
+                            <p style="margin:0;font-size:11px;color:var(--text-muted)">Nhập kho, xuất kho, QR</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px" onclick="window.app.editNhomQuyen('G005')"><i class="fas fa-edit"></i> Sửa</button>
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px;color:#dc2626;border-color:#fecaca" onclick="window.app.xoaNhomQuyen('G005')"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="card-body" style="padding:12px 16px">
+                    <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:700">PHÂN HỆ ĐƯỢC PHÉP (3/11):</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:5px">
+                        <span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#b4530915;color:#b45309">Trang tổng quan</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#b4530915;color:#b45309">Quản lý Phát hành</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#b4530915;color:#b45309">Thu hồi vé</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Tra thưởng</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Kế toán Chi trả</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thẩm định HS</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản lý Đại lý</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Báo cáo</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản trị hệ thống</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Nhật ký Audit</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Cổng Khách hàng</span>
+                    </div>
+                    <p style="margin:10px 0 0;font-size:12px;color:var(--text-muted)"><i class="fas fa-users"></i> 1 thành viên thuộc nhóm này</p>
+                </div>
+            </div>
+            <div class="card" style="margin-bottom:0;border-top:3px solid #475569">
+                <div class="card-header" style="padding:12px 16px">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:38px;height:38px;border-radius:50%;background:#47556920;display:flex;align-items:center;justify-content:center;color:#475569"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <b style="font-size:13px;color:#475569">Giám sát viên</b>
+                            <p style="margin:0;font-size:11px;color:var(--text-muted)">Chỉ xem báo cáo</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px" onclick="window.app.editNhomQuyen('G006')"><i class="fas fa-edit"></i> Sửa</button>
+                        <button class="btn btn-outline" style="padding:4px 10px;font-size:12px;color:#dc2626;border-color:#fecaca" onclick="window.app.xoaNhomQuyen('G006')"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="card-body" style="padding:12px 16px">
+                    <p style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:700">PHÂN HỆ ĐƯỢC PHÉP (3/11):</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:5px">
+                        <span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#47556915;color:#475569">Trang tổng quan</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản lý Phát hành</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thu hồi vé</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Tra thưởng</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Kế toán Chi trả</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Thẩm định HS</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản lý Đại lý</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#47556915;color:#475569">Báo cáo</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Quản trị hệ thống</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#47556915;color:#475569">Nhật ký Audit</span><span style="padding:3px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#f1f5f9;color:#94a3b8;text-decoration:line-through">Cổng Khách hàng</span>
+                    </div>
+                    <p style="margin:10px 0 0;font-size:12px;color:var(--text-muted)"><i class="fas fa-users"></i> 1 thành viên thuộc nhóm này</p>
+                </div>
+            </div></div></main>

@@ -1,0 +1,38 @@
+<div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title"><i class="fas fa-user-plus"></i> THÊM TÀI KHOẢN MỚI</h3>
+                        <button class="modal-close" onclick="window.app.closeModal('modal-them-user')"><i class="fas fa-times"></i></button>
+                    </div>
+                    <form id="form-them-user" onsubmit="window.app.taoUserMoi(event)">
+                        <div class="modal-body">
+                            <div class="form-group"><label class="form-label">Họ và Tên</label><input type="text" id="nu-name" class="form-control" required="" placeholder="Nhập họ tên..."></div>
+                            <div class="form-group"><label class="form-label">Email đăng nhập</label><input type="email" id="nu-email" class="form-control" required="" placeholder="name@xsktd.vn"></div>
+                            <div class="form-group">
+                                <label class="form-label">Phòng Ban / Đơn vị</label>
+                                <select id="nu-dept" class="form-control">
+                                    <option value="Ban Giám Đốc">Ban Giám Đốc</option>
+                                    <option value="Phòng Tài vụ">Phòng Tài vụ (Kế toán)</option>
+                                    <option value="Phòng Kế hoạch Phát hành">Phòng KH Phát hành</option>
+                                    <option value="Phòng Trả thưởng">Phòng Trả thưởng</option>
+                                    <option value="Phòng Thanh Tra">Phòng Thanh tra / Bảo vệ</option>
+                                    <option value="Chi nhánh">Chi nhánh / Trạm</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Nhóm Quyền (Role)</label>
+                                <select id="nu-role" class="form-control">
+                                    <option value="Admin (Giám đốc)">Quản trị viên (Admin / GĐ)</option>
+                                    <option value="Nhân viên Kế toán">Nhân viên Kế toán</option>
+                                    <option value="Nhân viên Thẩm định">Nhân viên Thẩm định Thưởng</option>
+                                    <option value="Chuyên viên Phát hành">Chuyên viên Phát hành</option>
+                                    <option value="Thủ kho vé">Thủ kho vé</option>
+                                    <option value="Giám sát viên">Giám sát viên (Read-only)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline" onclick="window.app.closeModal('modal-them-user')">Hủy</button>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Tạo Tài Khoản</button>
+                        </div>
+                    </form>
+                </div>

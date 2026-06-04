@@ -1,0 +1,42 @@
+<div class="modal-overlay active" id="modal-them-donvi">
+    <div class="modal-content" style="width:520px">
+        <div class="modal-header">
+            <h3 class="modal-title"><i class="fas fa-building"></i> THÊM ĐƠN VỊ MỚI</h3>
+            <button class="modal-close" onclick="window.app.closeModal('modal-them-donvi')">✕</button>
+        </div>
+        <form onsubmit="window.app.luuDonVi(event)">
+            <div class="modal-body">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+                    <div class="form-group">
+                        <label class="form-label">Mã đơn vị *</label>
+                        <input type="text" id="ndv-code" class="form-control" required="" placeholder="VD: BGD, CN_HCM...">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phân loại</label>
+                        <select id="ndv-type" class="form-control">
+                            <option value="Phòng ban">Phòng ban</option>
+                            <option value="Chi nhánh">Chi nhánh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom:12px">
+                    <label class="form-label">Tên đơn vị *</label>
+                    <input type="text" id="ndv-name" class="form-control" required="" placeholder="Nhập tên đơn vị...">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Trưởng đơn vị</label>
+                    <select id="ndv-manager" class="form-control">
+                        <option value="">-- Chọn nhân sự --</option>
+                        <option value="U001">Nguyễn Văn A</option>
+                        <option value="U002">Trần Kế Toán</option>
+                        <option value="U003">Phạm Chi Nhánh</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" onclick="window.app.closeModal('modal-them-donvi')">Hủy</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Tạo Đơn Vị</button>
+            </div>
+        </form>
+    </div>
+</div>

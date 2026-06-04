@@ -1,0 +1,50 @@
+<div class="modal-overlay active" id="modal-sua-donvi">
+    <div class="modal-content" style="width:520px">
+        <div class="modal-header">
+            <h3 class="modal-title"><i class="fas fa-edit"></i> SỬA THÔNG TIN ĐƠN VỊ</h3>
+            <button class="modal-close" onclick="window.app.closeModal('modal-sua-donvi')">✕</button>
+        </div>
+        <form onsubmit="window.app.luuSuaDonVi(event)">
+            <div class="modal-body">
+                <input type="hidden" id="sdv-id" value="1">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+                    <div class="form-group">
+                        <label class="form-label">Mã đơn vị *</label>
+                        <input type="text" id="sdv-code" class="form-control" required="" disabled="" value="BGD">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phân loại</label>
+                        <select id="sdv-type" class="form-control">
+                            <option value="Phòng ban" selected>Phòng ban</option>
+                            <option value="Chi nhánh">Chi nhánh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom:12px">
+                    <label class="form-label">Tên đơn vị *</label>
+                    <input type="text" id="sdv-name" class="form-control" required="" value="Ban Giám Đốc">
+                </div>
+                <div class="form-group" style="margin-bottom:12px">
+                    <label class="form-label">Trưởng đơn vị</label>
+                    <select id="sdv-manager" class="form-control">
+                        <option value="">-- Chọn nhân sự --</option>
+                        <option value="U001" selected>Nguyễn Văn A</option>
+                        <option value="U002">Trần Kế Toán</option>
+                        <option value="U003">Phạm Chi Nhánh</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Trạng thái</label>
+                    <select id="sdv-status" class="form-control">
+                        <option value="ACTIVE" selected>Hoạt động</option>
+                        <option value="INACTIVE">Ngừng hoạt động</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" onclick="window.app.closeModal('modal-sua-donvi')">Hủy</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Lưu Thay Đổi</button>
+            </div>
+        </form>
+    </div>
+</div>

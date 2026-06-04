@@ -1,0 +1,9 @@
+VietLotApi/bin/
+VietLotApi/obj/
+VietLotApi/appsettings.Development.json
+.vs/
+.vscode/
+*.user
+*.suo
+fix.js
+vietlottest/

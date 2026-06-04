@@ -1,0 +1,140 @@
+<main class="content-area" id="content-area">
+            <div class="card">
+                <div class="card-header">
+                    <div style="display:flex;align-items:center;gap:8px">
+                        <h3 class="card-title">Quản trị Tài khoản &amp; Phân quyền</h3>
+                        <span style="background:#e0e7ff;color:#3730a3;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px">4 tài khoản</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="window.app.openModal('modal-them-user')"><i class="fas fa-user-plus"></i> Thêm Tài Khoản</button>
+                </div>
+                <div class="card-body" style="padding:0">
+                    <table>
+                        <thead><tr><th>TÀI KHOẢN</th><th>PHÒNG BAN</th><th>VAI TRÒ</th><th>TRẠNG THÁI</th><th>ĐĂNG NHẬP CUỐI</th><th>THAO TÁC</th></tr></thead>
+                        <tbody>
+            <tr>
+                <td>
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <div style="position:relative;flex-shrink:0">
+                            <img src="https://ui-avatars.com/api/?name=Nguy%E1%BB%85n%20Qu%E1%BA%A3n%20Tr%E1%BB%8B&amp;background=random&amp;color=fff&amp;size=50" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #e2e8f0" onerror="this.src='https://ui-avatars.com/api/?name=Nguy%E1%BB%85n%20Qu%E1%BA%A3n%20Tr%E1%BB%8B&amp;background=0a2d54&amp;color=fff'">
+                            <button title="Đổi ảnh" onclick="window.app.moUploadAvatar('U001')" style="position:absolute;bottom:-2px;right:-4px;width:18px;height:18px;border-radius:50%;background:#0a2d54;border:2px solid white;cursor:pointer;display:flex;align-items:center;justify-content:center">
+                                <i class="fas fa-camera" style="color:white;font-size:7px"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <b style="font-size:13.5px">Nguyễn Quản Trị</b> <span class="badge-status badge-saved" style="padding:1px 6px;font-size:10px">Bạn</span>
+                            <div style="font-size:12px;color:var(--text-muted)">admin@xsktd.vn</div>
+                        </div>
+                    </div>
+                </td>
+                <td style="font-size:13px">Ban Giám Đốc</td>
+                <td><span class="badge-status" style="background:#e0e7ff;color:#3730a3">Quản trị hệ thống</span></td>
+                <td><span class="badge-status badge-saved">Hoạt động</span></td>
+                <td style="white-space:nowrap">18/03/2026</td>
+                <td>
+                    <div style="display:flex;gap:4px">
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Sửa" onclick="window.app.moFormSuaUser('U001')"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Phân quyền" onclick="window.app.moFormPhanQuyen('U001')"><i class="fas fa-user-shield"></i></button>
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <div style="position:relative;flex-shrink:0">
+                            <img src="https://ui-avatars.com/api/?name=Tr%E1%BA%A7n%20K%E1%BA%BF%20To%C3%A1n&amp;background=random&amp;color=fff&amp;size=50" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #e2e8f0" onerror="this.src='https://ui-avatars.com/api/?name=Tr%E1%BA%A7n%20K%E1%BA%BF%20To%C3%A1n&amp;background=0a2d54&amp;color=fff'">
+                            <button title="Đổi ảnh" onclick="window.app.moUploadAvatar('U002')" style="position:absolute;bottom:-2px;right:-4px;width:18px;height:18px;border-radius:50%;background:#0a2d54;border:2px solid white;cursor:pointer;display:flex;align-items:center;justify-content:center">
+                                <i class="fas fa-camera" style="color:white;font-size:7px"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <b style="font-size:13.5px">Trần Kế Toán</b> 
+                            <div style="font-size:12px;color:var(--text-muted)">ketoan@xsktd.vn</div>
+                        </div>
+                    </div>
+                </td>
+                <td style="font-size:13px">Phòng Tài vụ</td>
+                <td><span class="badge-status" style="background:#e0e7ff;color:#3730a3">Nhân viên Kế toán</span></td>
+                <td><span class="badge-status badge-saved">Hoạt động</span></td>
+                <td style="white-space:nowrap">18/03/2026</td>
+                <td>
+                    <div style="display:flex;gap:4px">
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Sửa" onclick="window.app.moFormSuaUser('U002')"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Phân quyền" onclick="window.app.moFormPhanQuyen('U002')"><i class="fas fa-user-shield"></i></button>
+                        
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px;color:#dc2626;border-color:#fecaca" title="Khóa" onclick="window.app.toggleUserStatus('U002')">
+                            <i class="fas fa-lock"></i>
+                        </button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px;color:#dc2626;border-color:#fecaca" title="Xóa" onclick="window.app.xoaUser('U002')"><i class="fas fa-trash"></i></button>
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <div style="position:relative;flex-shrink:0">
+                            <img src="https://ui-avatars.com/api/?name=L%C3%AA%20Kho%20Qu%E1%BB%B9&amp;background=random&amp;color=fff&amp;size=50" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #e2e8f0" onerror="this.src='https://ui-avatars.com/api/?name=L%C3%AA%20Kho%20Qu%E1%BB%B9&amp;background=0a2d54&amp;color=fff'">
+                            <button title="Đổi ảnh" onclick="window.app.moUploadAvatar('U003')" style="position:absolute;bottom:-2px;right:-4px;width:18px;height:18px;border-radius:50%;background:#0a2d54;border:2px solid white;cursor:pointer;display:flex;align-items:center;justify-content:center">
+                                <i class="fas fa-camera" style="color:white;font-size:7px"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <b style="font-size:13.5px">Lê Kho Quỹ</b> 
+                            <div style="font-size:12px;color:var(--text-muted)">khoquy@xsktd.vn</div>
+                        </div>
+                    </div>
+                </td>
+                <td style="font-size:13px">Phòng Trả thưởng</td>
+                <td><span class="badge-status" style="background:#e0e7ff;color:#3730a3">Thủ kho vé</span></td>
+                <td><span class="badge-status badge-saved">Hoạt động</span></td>
+                <td style="white-space:nowrap">18/03/2026</td>
+                <td>
+                    <div style="display:flex;gap:4px">
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Sửa" onclick="window.app.moFormSuaUser('U003')"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Phân quyền" onclick="window.app.moFormPhanQuyen('U003')"><i class="fas fa-user-shield"></i></button>
+                        
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px;color:#dc2626;border-color:#fecaca" title="Khóa" onclick="window.app.toggleUserStatus('U003')">
+                            <i class="fas fa-lock"></i>
+                        </button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px;color:#dc2626;border-color:#fecaca" title="Xóa" onclick="window.app.xoaUser('U003')"><i class="fas fa-trash"></i></button>
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <div style="position:relative;flex-shrink:0">
+                            <img src="https://ui-avatars.com/api/?name=Ph%E1%BA%A1m%20Thanh%20Tra&amp;background=random&amp;color=fff&amp;size=50" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #e2e8f0" onerror="this.src='https://ui-avatars.com/api/?name=Ph%E1%BA%A1m%20Thanh%20Tra&amp;background=0a2d54&amp;color=fff'">
+                            <button title="Đổi ảnh" onclick="window.app.moUploadAvatar('U004')" style="position:absolute;bottom:-2px;right:-4px;width:18px;height:18px;border-radius:50%;background:#0a2d54;border:2px solid white;cursor:pointer;display:flex;align-items:center;justify-content:center">
+                                <i class="fas fa-camera" style="color:white;font-size:7px"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <b style="font-size:13.5px">Phạm Thanh Tra</b> 
+                            <div style="font-size:12px;color:var(--text-muted)">thanhtra@xsktd.vn</div>
+                        </div>
+                    </div>
+                </td>
+                <td style="font-size:13px">Phòng Thanh Tra</td>
+                <td><span class="badge-status" style="background:#e0e7ff;color:#3730a3">Giám sát viên</span></td>
+                <td><span class="badge-status badge-waiting">Bị khóa</span></td>
+                <td style="white-space:nowrap">18/03/2026</td>
+                <td>
+                    <div style="display:flex;gap:4px">
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Sửa" onclick="window.app.moFormSuaUser('U004')"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px" title="Phân quyền" onclick="window.app.moFormPhanQuyen('U004')"><i class="fas fa-user-shield"></i></button>
+                        
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px;color:var(--primary)" title="Mở khóa" onclick="window.app.toggleUserStatus('U004')">
+                            <i class="fas fa-unlock"></i>
+                        </button>
+                        <button class="btn btn-outline" style="padding:4px 8px;font-size:12px;color:#dc2626;border-color:#fecaca" title="Xóa" onclick="window.app.xoaUser('U004')"><i class="fas fa-trash"></i></button>
+                        
+                    </div>
+                </td>
+            </tr></tbody>
+                    </table>
+                    
+                </div>
+            </div></main>

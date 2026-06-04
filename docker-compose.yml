@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  vietlot-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5114:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=DemoDB;User Id=sa;Password=VietLot@Pass123!;TrustServerCertificate=True;MultipleActiveResultSets=true
+    depends_on:
+      - sqlserver
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=VietLot@Pass123!

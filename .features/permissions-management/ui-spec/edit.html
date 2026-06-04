@@ -1,0 +1,52 @@
+<div class="modal-overlay active" id="modal-edit-nhom">
+            <div class="modal-content" style="width:600px">
+                <div class="modal-header"><h3 class="modal-title"><i class="fas fa-shield-alt"></i> Cấu hình Nhóm Quyền</h3><button class="modal-close" onclick="window.app.closeModal('modal-edit-nhom')">✕</button></div>
+                <form onsubmit="window.app.luuNhomQuyen(event)">
+                    <div class="modal-body">
+                        <input type="hidden" id="nhom-edit-id" value="G001">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+                            <div class="form-group"><label class="form-label">Tên nhóm *</label><input type="text" id="nhom-edit-name" class="form-control" required=""></div>
+                            <div class="form-group"><label class="form-label">Mô tả</label><input type="text" id="nhom-edit-desc" class="form-control"></div>
+                        </div>
+                        <label class="form-label" style="margin-bottom:8px">PHÂN HỆ ĐƯỢC PHÉP TRUY CẬP:</label>
+                        <div id="nhom-perm-list" style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px">
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="dashboard" style="accent-color:var(--primary)"> <span style="font-size:13px">Trang tổng quan</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="phathanh" style="accent-color:var(--primary)"> <span style="font-size:13px">Quản lý Phát hành</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="thuhoi" style="accent-color:var(--primary)"> <span style="font-size:13px">Thu hồi vé</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="trathuong" style="accent-color:var(--primary)"> <span style="font-size:13px">Tra thưởng</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="ketoan" style="accent-color:var(--primary)"> <span style="font-size:13px">Kế toán Chi trả</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="thamdinh" style="accent-color:var(--primary)"> <span style="font-size:13px">Thẩm định HS</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="daily" style="accent-color:var(--primary)"> <span style="font-size:13px">Quản lý Đại lý</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="baocao" style="accent-color:var(--primary)"> <span style="font-size:13px">Báo cáo</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="hethong" style="accent-color:var(--primary)"> <span style="font-size:13px">Quản trị hệ thống</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="nhatky" style="accent-color:var(--primary)"> <span style="font-size:13px">Nhật ký Audit</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:5px;cursor:pointer;background:#f8fafc;border:1px solid #e2e8f0">
+                <input type="checkbox" value="congkhach" style="accent-color:var(--primary)"> <span style="font-size:13px">Cổng Khách hàng</span>
+            </label></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline" onclick="window.app.closeModal('modal-edit-nhom')">Hủy</button>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Lưu Nhóm Quyền</button>
+                    </div>
+                </form>
+            </div></div>
